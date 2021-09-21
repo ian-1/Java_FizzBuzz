@@ -9,7 +9,8 @@ public class FizzBuzzPrinterTest {
 
     @BeforeEach
     public void setup() {
-        subject = new FizzBuzzPrinter();
+        iFizzBuzzCounter mockCounter = new MockFizzBuzzCounter();
+        subject = new FizzBuzzPrinter(mockCounter);
     }
 
     @Test
@@ -32,5 +33,23 @@ public class FizzBuzzPrinterTest {
         String lineThree = "FizzBuzz: 2\n";
         String expectation = lineOne + lineTwo + lineThree;
         assertEquals(expectation, result);
+    }
+
+    private class MockFizzBuzzCounter implements iFizzBuzzCounter {
+        public Integer fizzCount(Integer startingNumber, Integer endingNumber) {
+            if (isScenarioOne(startingNumber, endingNumber)) return 7; else return 0;
+        }
+
+        public Integer buzzCount(Integer startingNumber, Integer endingNumber) {
+            if (isScenarioOne(startingNumber, endingNumber)) return 4; else return 0;
+        }
+
+        public Integer fizzBuzzCount(Integer startingNumber, Integer endingNumber) {
+            if (isScenarioOne(startingNumber, endingNumber)) return 2; else return 0;
+        }
+
+        private boolean isScenarioOne(Integer startingNumber, Integer endingNumber) {
+            return startingNumber == 4 && endingNumber == 31;
+        }
     }
 }

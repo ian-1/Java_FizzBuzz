@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FizzBuzzPrinterTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-09-21T13:57:46" hostname="FVFFX3M9Q05P" time="0.087">
-  <properties/>
-  <testcase name="returns correct values in string" classname="FizzBuzzPrinterTest" time="0.078"/>
-  <testcase name="returns correct format string" classname="FizzBuzzPrinterTest" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

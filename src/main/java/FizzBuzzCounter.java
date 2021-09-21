@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class FizzBuzzCounter {
+public class FizzBuzzCounter implements iFizzBuzzCounter{
     private final iFizzBuzzConverter converter;
 
     FizzBuzzCounter() {
@@ -11,19 +11,19 @@ public class FizzBuzzCounter {
         this.converter = converter;
     }
 
-    Integer fizzCount(Integer startingNumber, Integer endingNumber) {
+    public Integer fizzCount(Integer startingNumber, Integer endingNumber) {
         return typeCount("Fizz", startingNumber, endingNumber);
     }
 
-    Integer buzzCount(Integer startingNumber, Integer endingNumber) {
+    public Integer buzzCount(Integer startingNumber, Integer endingNumber) {
         return typeCount("Buzz", startingNumber, endingNumber);
     }
 
-    Integer fizzBuzzCount(Integer startingNumber, Integer endingNumber) {
+    public Integer fizzBuzzCount(Integer startingNumber, Integer endingNumber) {
         return typeCount("FizzBuzz", startingNumber, endingNumber);
     }
 
-    Integer typeCount(String type, Integer startingNumber, Integer endingNumber) {
+    private Integer typeCount(String type, Integer startingNumber, Integer endingNumber) {
         Integer Count = 0;
         for (int i = startingNumber; i <= endingNumber; i++) {
             if (Objects.equals(this.converter.fizzBuzz(i), type)) {
