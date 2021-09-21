@@ -13,8 +13,8 @@ public class FizzBuzzTest {
     }
 
     @Test
-    @DisplayName("Returns non-special numbers")
-    void testReturnsNonSpecialNumbers() {
+    @DisplayName("Returns non-special number as string")
+    void testReturnsNonSpecialNumberAsString() {
         String result = subject.fizzBuzz(2);
         assertEquals("2", result);
     }
@@ -31,5 +31,12 @@ public class FizzBuzzTest {
     void testReturnsMultiplesOfFiveAsBuzz() {
         String result = subject.fizzBuzz(10);
         assertEquals("Buzz", result);
+    }
+
+    @Test
+    @DisplayName("Returns multiples of three and five as FizzBuzz")
+    void testReturnsMultiplesOfThreeAndFiveAsFizzBuzz() {
+        String result = subject.fizzBuzz(30);
+        assertEquals("FizzBuzz", result);
     }
 }

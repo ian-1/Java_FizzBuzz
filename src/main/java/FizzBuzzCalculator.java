@@ -1,11 +1,16 @@
 public class FizzBuzzCalculator {
     String fizzBuzz(Integer inputNumber) {
-        if (inputNumber % 3 == 0 ) {
-            return "Fizz";
-        } else if (inputNumber % 5 == 0 ) {
-            return "Buzz";
+        String outputString = "";
+        if (inputNumber % 3 == 0 || inputNumber % 5 == 0 ) {
+            if (inputNumber % 3 == 0 ) {
+                outputString += "Fizz";
+            }
+            if (inputNumber % 5 == 0 ) {
+                outputString += "Buzz";
+            }
         } else {
-            return inputNumber.toString();
+            outputString +=  inputNumber.toString();
         }
+        return outputString;
     }
 }

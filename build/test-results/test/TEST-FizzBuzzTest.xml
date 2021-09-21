@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FizzBuzzTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-09-21T09:08:33" hostname="FVFFX3M9Q05P" time="0.079">
+<testsuite name="FizzBuzzTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-09-21T09:16:04" hostname="FVFFX3M9Q05P" time="0.098">
   <properties/>
-  <testcase name="Returns multiples of three as Fizz" classname="FizzBuzzTest" time="0.069"/>
-  <testcase name="Returns non-special numbers" classname="FizzBuzzTest" time="0.001"/>
-  <testcase name="Returns multiples of five as Buzz" classname="FizzBuzzTest" time="0.002"/>
+  <testcase name="Returns multiples of three and five as FizzBuzz" classname="FizzBuzzTest" time="0.051"/>
+  <testcase name="Returns multiples of three as Fizz" classname="FizzBuzzTest" time="0.002"/>
+  <testcase name="Returns non-special number as string" classname="FizzBuzzTest" time="0.036"/>
+  <testcase name="Returns multiples of five as Buzz" classname="FizzBuzzTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
