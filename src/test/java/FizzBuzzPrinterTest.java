@@ -22,4 +22,15 @@ public class FizzBuzzPrinterTest {
         String expectation = lineOne + lineTwo + lineThree;
         assertEquals(expectation, result);
     }
+
+    @Test
+    @DisplayName("returns correct values in string")
+    void testReturnsCorrectValuesInString() {
+        String result = subject.print(1, 31);
+        String lineOne = "Fizz: 8\n";
+        String lineTwo = "Buzz: 4\n";
+        String lineThree = "FizzBuzz: 2\n";
+        String expectation = lineOne + lineTwo + lineThree;
+        assertEquals(expectation, result);
+    }
 }
