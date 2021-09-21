@@ -1,5 +1,7 @@
+import java.util.Objects;
+
 public class FizzBuzzCounter {
-    private FizzBuzzConverter converter;
+    private final FizzBuzzConverter converter;
 
     FizzBuzzCounter() {
         converter = new FizzBuzzConverter();
@@ -7,8 +9,8 @@ public class FizzBuzzCounter {
 
     Integer fizzCount(Integer startingNumber, Integer endingNumber) {
         Integer fizzCount = 0;
-        for(int i = startingNumber; i <= endingNumber; i++) {
-            if (i % 3 == 0) {
+        for (int i = startingNumber; i <= endingNumber; i++) {
+            if (Objects.equals(converter.fizzBuzz(i), "Fizz")) {
                 fizzCount++;
             }
         }

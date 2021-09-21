@@ -18,4 +18,11 @@ public class FizzBuzzCounterTest {
         Integer result = subject.fizzCount(4, 10);
         assertEquals(2, result);
     }
+
+    @Test
+    @DisplayName("fizzCount returns number of Fizzes excluding FizzBuzzes")
+    void testFizzCountReturnsNumberOfFizzesExcludingFizzBuzzes() {
+        Integer result = subject.fizzCount(7, 16);
+        assertEquals(2, result);
+    }
 }
