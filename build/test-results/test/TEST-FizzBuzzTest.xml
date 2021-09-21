@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FizzBuzzTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-21T08:43:58" hostname="FVFFX3M9Q05P" time="0.029">
+<testsuite name="FizzBuzzTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-09-21T08:58:46" hostname="FVFFX3M9Q05P" time="0.072">
   <properties/>
-  <testcase name="Can return non-special number" classname="FizzBuzzTest" time="0.029"/>
+  <testcase name="Returns multiples of three as Fizz" classname="FizzBuzzTest" time="0.065"/>
+  <testcase name="Returns non-special numbers" classname="FizzBuzzTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
