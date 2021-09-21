@@ -1,4 +1,4 @@
-public class FizzBuzzCalculator {
+public class FizzBuzzConverter {
     String fizzBuzz(Integer inputNumber) {
         if (isFizzBuzzy(inputNumber)) {
             return fizzBuzzReplacement(inputNumber);

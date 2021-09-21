@@ -4,12 +4,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FizzBuzzTest {
-    private FizzBuzzCalculator subject;
+public class FizzBuzzConverterTest {
+    private FizzBuzzConverter subject;
 
     @BeforeEach
     public void setup() {
-        subject = new FizzBuzzCalculator();
+        subject = new FizzBuzzConverter();
     }
 
     @Test
