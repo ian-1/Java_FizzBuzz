@@ -16,4 +16,14 @@ public class FizzBuzzCounter {
         }
         return fizzCount;
     }
+
+    Integer buzzCount(Integer startingNumber, Integer endingNumber) {
+        Integer buzzCount = 0;
+        for (int i = startingNumber; i <= endingNumber; i++) {
+            if (Objects.equals(converter.fizzBuzz(i), "Buzz")) {
+                buzzCount++;
+            }
+        }
+        return buzzCount;
+    }
 }
