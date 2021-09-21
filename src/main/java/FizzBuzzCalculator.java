@@ -1,15 +1,23 @@
 public class FizzBuzzCalculator {
     String fizzBuzz(Integer inputNumber) {
-        String outputString = "";
-        if (inputNumber % 3 == 0 || inputNumber % 5 == 0 ) {
-            if (inputNumber % 3 == 0 ) {
-                outputString += "Fizz";
-            }
-            if (inputNumber % 5 == 0 ) {
-                outputString += "Buzz";
-            }
+        if (isFizzBuzzy(inputNumber)) {
+            return fizzBuzzReplacement(inputNumber);
         } else {
-            outputString +=  inputNumber.toString();
+            return inputNumber.toString();
+        }
+    }
+
+    boolean isFizzBuzzy(Integer inputNumber) {
+        return inputNumber % 3 == 0 || inputNumber % 5 == 0;
+    }
+
+    String fizzBuzzReplacement(Integer inputNumber) {
+        String outputString = "";
+        if (inputNumber % 3 == 0 ) {
+            outputString += "Fizz";
+        }
+        if (inputNumber % 5 == 0 ) {
+            outputString += "Buzz";
         }
         return outputString;
     }
