@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzConverterTest {
-    private FizzBuzzConverter subject;
+    private iFizzBuzzConverter subject;
 
     @BeforeEach
     public void setup() {
